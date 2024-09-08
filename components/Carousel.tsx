@@ -1,17 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
 import Carousel from "react-material-ui-carousel";
 import Image from "next/image";
 
-import {
-  Card,
-  CardContent,
-  CardMedia,
-  Typography,
-  Grid,
-  Button,
-} from "@mui/material";
+import { Card } from "@mui/material";
 
 const Example = () => {
   return (
@@ -56,13 +48,6 @@ const Example = () => {
   );
 };
 
-type Item = {
-  Name: string;
-  Caption: string;
-  contentPosition: "left" | "right" | "middle";
-  Items: { Name: string; Image: string }[];
-};
-
 interface BannerProps2 {
   source: string;
 }
@@ -70,7 +55,7 @@ interface BannerProps2 {
 const Banner = (props: BannerProps2) => {
   const mediaLength = 1;
 
-  let items = [];
+  const items = [];
 
   for (let i = 0; i < mediaLength; i++) {
     // const item = props.item.Items[i];
