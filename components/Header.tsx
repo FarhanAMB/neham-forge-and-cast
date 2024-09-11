@@ -4,8 +4,9 @@ export default function Header() {
   const navItems = [
     "Home",
     "About Us",
+    "Our Policies",
     "Infrastructure",
-    "Our Capabilities",
+    "Capabilities",
     "Contact Us",
   ];
   return (
