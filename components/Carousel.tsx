@@ -7,9 +7,9 @@ import { Card } from "@mui/material";
 
 const Example = () => {
   return (
-    <div style={{ marginTop: "50px", color: "#494949" }}>
+    <div>
       <Carousel
-        className="Example"
+        className="mb-1"
         next={(now: any, previous: any) =>
           console.log(
             `Next User Callback: Now displaying child ${now}. Previously displayed child ${previous}`
@@ -35,9 +35,9 @@ const Example = () => {
         indicatorIconButtonProps={{
           style: { zIndex: 5, padding: 3, justifySelf: "flex-start" },
         }}
-        height={400}
         autoPlay={true}
         animation="slide"
+        height={500}
       >
         {items2.map((item, index) => {
           return <Banner source={item} key={index} />;
@@ -72,6 +72,10 @@ const Banner = (props: BannerProps2) => {
   return <Card raised>{items}</Card>;
 };
 
-const items2: string[] = ["/mountain.jpg", "/mountain.jpg", "/mountain.jpg"];
+const items2: string[] = [
+  "/carousel1-1.jpg",
+  "/carousel1-2.jpg",
+  "/carousel1-3.jpg",
+];
 
 export default Example;

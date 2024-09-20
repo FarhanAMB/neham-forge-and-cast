@@ -30,7 +30,10 @@ export default function Policies() {
             <Button
               variant="outlined"
               className="mt-5"
-              sx={{ backgroundColor: "#FFD66F", color: "black" }}
+              sx={{
+                backgroundColor: "secondary.main",
+                color: "info.main",
+              }}
             >
               Read More
             </Button>
@@ -60,7 +63,10 @@ export default function Policies() {
             <Button
               variant="outlined"
               className="mt-5"
-              sx={{ backgroundColor: "#FFD66F", color: "black" }}
+              sx={{
+                backgroundColor: "secondary.main",
+                color: "info.main",
+              }}
             >
               Read More
             </Button>
@@ -90,7 +96,10 @@ export default function Policies() {
             <Button
               variant="outlined"
               className="mt-5"
-              sx={{ backgroundColor: "#FFD66F", color: "black" }}
+              sx={{
+                backgroundColor: "secondary.main",
+                color: "info.main",
+              }}
             >
               Read More
             </Button>

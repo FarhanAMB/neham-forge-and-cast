@@ -10,24 +10,24 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 
-const customTheme = createTheme({
+const theme = createTheme({
   palette: {
     primary: {
-      main: "#6599DC",
-    },
-    secondary: {
       main: "#FFD66F",
     },
+    secondary: {
+      main: "#6599DC",
+    },
     info: {
-      main: "#000000",
-      light: "#ffffff",
+      main: "#ffffff",
+      light: "#000000",
     },
   },
 });
 
 export default function Home() {
   return (
-    <ThemeProvider theme={customTheme}>
+    <ThemeProvider theme={theme}>
       <Header />
       <Carousel />
       <Products />

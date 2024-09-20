@@ -15,7 +15,7 @@ export default function Footer() {
           justifyContent: "center",
           maxHeight: 350,
         }}
-        bgcolor="#6599DC"
+        bgcolor={"primary.main"}
       >
         <Typography
           sx={{ fontWeight: 600, padding: 10, textAlign: "center" }}
@@ -27,10 +27,11 @@ export default function Footer() {
           <Button
             variant="contained"
             sx={{
-              backgroundColor: "#FFD66F",
+              backgroundColor: "secondary.main",
               padding: 2,
               paddingX: 10,
               marginX: 5,
+              color: "info.main",
             }}
             className="text-xl"
           >
@@ -39,13 +40,14 @@ export default function Footer() {
           <Button
             variant="outlined"
             sx={{
-              borderColor: "white",
-              color: "white",
+              borderColor: "info.light",
+              color: "info.light",
               padding: 2,
               paddingX: 10,
               marginX: 5,
             }}
             className="text-xl"
+            color="info"
           >
             Product Range
           </Button>
@@ -60,13 +62,17 @@ export default function Footer() {
             display: "flex",
             flexDirection: "row",
             justifyContent: "space-around",
-            backgroundColor: "#FFD66F",
-            color: "black",
+            backgroundColor: "secondary.main",
             padding: 4,
+            color: "info.main",
           }}
         >
           <div>
-            <Typography variant="h6" className="p-3" sx={{ fontWeight: 600 }}>
+            <Typography
+              variant="h6"
+              className="p-3"
+              sx={{ fontWeight: 600, textDecoration: "underline" }}
+            >
               Contact info
             </Typography>
             <ul>
@@ -89,7 +95,11 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <Typography variant="h6" className="p-3" sx={{ fontWeight: 600 }}>
+            <Typography
+              variant="h6"
+              className="p-3"
+              sx={{ fontWeight: 600, textDecoration: "underline" }}
+            >
               Resources
             </Typography>
             <ul>

@@ -8,7 +8,7 @@ import { Grid2 } from "@mui/material";
 
 const Example = () => {
   return (
-    <div style={{ marginTop: "50px", color: "#494949" }}>
+    <div style={{ marginTop: "10px", color: "#494949" }}>
       <Carousel
         className="Example"
         next={(now: any, previous: any) =>
@@ -30,6 +30,7 @@ const Example = () => {
           style: { backgroundColor: "cornflowerblue", borderRadius: 50 },
         }}
         navButtonsWrapperProps={{ style: { bottom: "0", top: "unset" } }}
+        navButtonsAlwaysInvisible={true}
         indicatorContainerProps={{
           style: { margin: "20px", alignContent: "flex-start" },
         }}
@@ -38,6 +39,7 @@ const Example = () => {
         }}
         duration={500}
         animation="slide"
+        stopAutoPlayOnHover={false}
       >
         {items.map((item, index) => {
           return <Banner item={item} key={index} />;
@@ -111,82 +113,82 @@ const items: Item[] = [
     Items: [
       {
         Name: "G.I. Pipe Fitting",
-        Image: "/mountain.jpg",
+        Image: "/carousel2-1.jpg",
       },
       {
         Name: "Scaffolding",
-        Image: "/mountain.jpg",
+        Image: "/carousel2-2.jpg",
       },
       {
         Name: "Custom Forging",
-        Image: "/mountain.jpg",
+        Image: "/carousel2-3.jpg",
       },
     ],
   },
   {
     Items: [
       {
-        Name: "Scaffolding",
-        Image: "/mountain.jpg",
-      },
-      {
-        Name: "Custom Forging",
-        Image: "/mountain.jpg",
-      },
-      {
         Name: "Custo S.G. Iron Casting",
-        Image: "/mountain.jpg",
-      },
-    ],
-  },
-  {
-    Items: [
-      {
-        Name: "Custom Forging",
-        Image: "/mountain.jpg",
-      },
-      {
-        Name: "Custo S.G. Iron Casting",
-        Image: "/mountain.jpg",
+        Image: "/carousel2-4.jpg",
       },
       {
         Name: "Custom C.I. Casting",
-        Image: "/mountain.jpg",
-      },
-    ],
-  },
-  {
-    Items: [
-      {
-        Name: "Custo S.G. Iron Casting",
-        Image: "/mountain.jpg",
-      },
-      {
-        Name: "Custom C.I. Casting",
-        Image: "/mountain.jpg",
+        Image: "/carousel2-5.jpg",
       },
       {
         Name: "G.I. Pipe Fitting",
-        Image: "/mountain.jpg",
+        Image: "/carousel2-2.jpg",
       },
     ],
   },
-  {
-    Items: [
-      {
-        Name: "Custom C.I. Casting",
-        Image: "/mountain.jpg",
-      },
-      {
-        Name: "G.I. Pipe Fitting",
-        Image: "/mountain.jpg",
-      },
-      {
-        Name: "Scaffolding",
-        Image: "/mountain.jpg",
-      },
-    ],
-  },
+  // {
+  //   Items: [
+  //     {
+  //       Name: "Custom Forging",
+  //       Image: "/mountain.jpg",
+  //     },
+  //     {
+  //       Name: "Custo S.G. Iron Casting",
+  //       Image: "/mountain.jpg",
+  //     },
+  //     {
+  //       Name: "Custom C.I. Casting",
+  //       Image: "/mountain.jpg",
+  //     },
+  //   ],
+  // },
+  // {
+  //   Items: [
+  //     {
+  //       Name: "Custo S.G. Iron Casting",
+  //       Image: "/mountain.jpg",
+  //     },
+  //     {
+  //       Name: "Custom C.I. Casting",
+  //       Image: "/mountain.jpg",
+  //     },
+  //     {
+  //       Name: "G.I. Pipe Fitting",
+  //       Image: "/mountain.jpg",
+  //     },
+  //   ],
+  // },
+  // {
+  //   Items: [
+  //     {
+  //       Name: "Custom C.I. Casting",
+  //       Image: "/mountain.jpg",
+  //     },
+  //     {
+  //       Name: "G.I. Pipe Fitting",
+  //       Image: "/mountain.jpg",
+  //     },
+  //     {
+  //       Name: "Scaffolding",
+  //       Image: "/mountain.jpg",
+  //     },
+  //   ],
+  // },
 ];
 
 export default Example;

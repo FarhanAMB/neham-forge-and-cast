@@ -9,7 +9,7 @@ import { Card, CardContent, Box } from "@mui/material";
 export default function Policies() {
   return (
     <div className="mt-12 text-black">
-      <p className="text-center text-5xl font-medium mb-20">Our Policies</p>
+      <p className="text-center text-5xl font-medium mb-8">Our Policies</p>
       <div className="flex ">
         <Card
           sx={{
@@ -24,7 +24,7 @@ export default function Policies() {
         >
           <Box display="flex" justifyContent="center" alignItems="center" p={2}>
             <Avatar sx={{ width: 50, height: 50, bgcolor: "white" }}>
-              <EditNoteIcon sx={{ color: "#FFD66F" }} fontSize="large" />
+              <EditNoteIcon sx={{ color: "secondary.main" }} fontSize="large" />
             </Avatar>
           </Box>
           <CardContent sx={{ marginTop: -2 }}>
@@ -57,7 +57,10 @@ export default function Policies() {
         >
           <Box display="flex" justifyContent="center" alignItems="center" p={2}>
             <Avatar sx={{ width: 50, height: 50, bgcolor: "white" }}>
-              <BorderColorIcon sx={{ color: "#FFD66F" }} fontSize="large" />
+              <BorderColorIcon
+                sx={{ color: "secondary.main" }}
+                fontSize="large"
+              />
             </Avatar>
           </Box>
           <CardContent sx={{ marginTop: -2 }}>
@@ -91,7 +94,7 @@ export default function Policies() {
           <Box display="flex" justifyContent="center" alignItems="center" p={2}>
             <Avatar sx={{ width: 50, height: 50, bgcolor: "white" }}>
               <EngineeringRoundedIcon
-                sx={{ color: "#FFD66F" }}
+                sx={{ color: "secondary.main" }}
                 fontSize="large"
               />
             </Avatar>
@@ -127,7 +130,7 @@ export default function Policies() {
           <Box display="flex" justifyContent="center" alignItems="center" p={2}>
             <Avatar sx={{ width: 50, height: 50, bgcolor: "white" }}>
               <CheckCircleOutlineRoundedIcon
-                sx={{ color: "#FFD66F" }}
+                sx={{ color: "secondary.main" }}
                 fontSize="large"
               />
             </Avatar>
@@ -163,7 +166,7 @@ export default function Policies() {
           <Box display="flex" justifyContent="center" alignItems="center" p={2}>
             <Avatar sx={{ width: 50, height: 50, bgcolor: "white" }}>
               <LocalShippingRoundedIcon
-                sx={{ color: "#FFD66F" }}
+                sx={{ color: "secondary.main" }}
                 fontSize="large"
               />
             </Avatar>
