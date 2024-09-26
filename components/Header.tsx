@@ -2,6 +2,7 @@
 import { Button } from "@mui/material";
 import HoverNav from "@/components/HoverNav";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 export default function Header() {
   const navItems = [
@@ -14,7 +15,7 @@ export default function Header() {
   ];
 
   const path = usePathname();
-  const barcolor = path === "/" ? "blue" : "yellow";
+  const barcolor = path === "/color2" ? "yellow" : "blue";
 
   return (
     <main className="sticky z-10 top-0 bg-foreground flex h-auto justify-between">
@@ -22,7 +23,9 @@ export default function Header() {
         <img src={barcolor === "blue" ? "/header1.png" : "/header3.png"}></img>
       </div>
       <div className="h-20 w-2/12">
-        <img src="/logo.png"></img>
+        <Link href="/">
+          <img src="/logo.png"></img>
+        </Link>
       </div>
       <div className="flex flex-col w-3/5 items-end  ">
         <div>
@@ -30,7 +33,11 @@ export default function Header() {
             {navItems.map((item, index) => (
               <li key={index} className=" rounded-md mx-4 ">
                 <Button
-                  href={`/${item.toLowerCase()}`}
+                  href={
+                    item === "Home"
+                      ? "/"
+                      : `/${item.toLowerCase().replace(" ", "-")}`
+                  }
                   variant="text"
                   className="text-blue-500"
                 >

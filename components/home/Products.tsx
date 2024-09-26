@@ -1,4 +1,4 @@
-import Pcarousel from "@/components/Pcarousel";
+import Pcarousel from "@/components/home/Pcarousel";
 import { Button } from "@mui/material";
 
 export default function Products() {

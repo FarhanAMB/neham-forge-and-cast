@@ -9,13 +9,14 @@ export default function Footer() {
       <Box
         sx={{
           margin: 15,
-          marginTop: 20,
+          marginTop: 15,
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
           maxHeight: 350,
+          backgroundImage: "url(/banner.png)",
+          backgroundSize: "cover",
         }}
-        bgcolor={"primary.main"}
       >
         <Typography
           sx={{ fontWeight: 600, padding: 10, textAlign: "center" }}

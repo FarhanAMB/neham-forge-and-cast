@@ -141,54 +141,6 @@ const items: Item[] = [
       },
     ],
   },
-  // {
-  //   Items: [
-  //     {
-  //       Name: "Custom Forging",
-  //       Image: "/mountain.jpg",
-  //     },
-  //     {
-  //       Name: "Custo S.G. Iron Casting",
-  //       Image: "/mountain.jpg",
-  //     },
-  //     {
-  //       Name: "Custom C.I. Casting",
-  //       Image: "/mountain.jpg",
-  //     },
-  //   ],
-  // },
-  // {
-  //   Items: [
-  //     {
-  //       Name: "Custo S.G. Iron Casting",
-  //       Image: "/mountain.jpg",
-  //     },
-  //     {
-  //       Name: "Custom C.I. Casting",
-  //       Image: "/mountain.jpg",
-  //     },
-  //     {
-  //       Name: "G.I. Pipe Fitting",
-  //       Image: "/mountain.jpg",
-  //     },
-  //   ],
-  // },
-  // {
-  //   Items: [
-  //     {
-  //       Name: "Custom C.I. Casting",
-  //       Image: "/mountain.jpg",
-  //     },
-  //     {
-  //       Name: "G.I. Pipe Fitting",
-  //       Image: "/mountain.jpg",
-  //     },
-  //     {
-  //       Name: "Scaffolding",
-  //       Image: "/mountain.jpg",
-  //     },
-  //   ],
-  // },
 ];
 
 export default Example;
