@@ -11,7 +11,12 @@ export default function TitlebarImageList() {
       <ImageList className="m4 p-28" gap={50} rowHeight={300}>
         {newData.map((item) => (
           <ImageListItem key={item.img}>
-            <Image src={item.img} alt={item.title} fill />
+            <Image
+              src={item.img}
+              alt={item.title}
+              fill
+              className="rounded-lg"
+            />
             <ImageListItemBar
               title={item.title}
               sx={{
@@ -21,7 +26,7 @@ export default function TitlebarImageList() {
                   color: "secondary.main",
                 },
               }}
-              className="h-1/5"
+              className="h-1/5 rounded-lg"
             >
               test
             </ImageListItemBar>
