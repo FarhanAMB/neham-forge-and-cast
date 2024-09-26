@@ -1,7 +1,5 @@
-import { Box, List, ListItem, Typography } from "@mui/material";
-import Link from "next/link";
+import { Box, Typography } from "@mui/material";
 import SubHeaderBox from "@/components/SubHeaderBox";
-import { title } from "process";
 import Image from "next/image";
 
 export default function OurPolicies() {

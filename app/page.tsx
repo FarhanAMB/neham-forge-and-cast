@@ -1,5 +1,4 @@
 "use client";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Carousel from "@/components/home/Carousel";
 import Products from "@/components/home/Products";
 import Policies from "@/components/home/Policies";
