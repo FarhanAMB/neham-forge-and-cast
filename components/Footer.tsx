@@ -9,7 +9,7 @@ export default function Footer() {
       <Box
         sx={{
           margin: 15,
-          marginTop: 20,
+          marginTop: 15,
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",

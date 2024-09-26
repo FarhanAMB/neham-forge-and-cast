@@ -14,6 +14,9 @@ let customTheme = createTheme({
         main: "#000000",
         light: "#ffffff",
       },
+      background: {
+        default: "#ededed",
+      },
     },
   });
 

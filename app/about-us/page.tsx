@@ -3,15 +3,12 @@ import Image from "next/image";
 import RestoreIcon from "@mui/icons-material/Restore";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import EmojiEventsIcon from "@mui/icons-material/EmojiEvents";
+import SubHeaderBox from "@/components/SubHeaderBox";
 
 export default function AboutUsPage() {
   return (
     <main>
-      <Box bgcolor={"Cgray.main"} className="my-2 p-4">
-        <Typography variant="h1" sx={{ textAlign: "left", padding: 5 }}>
-          About Us
-        </Typography>
-      </Box>
+      <SubHeaderBox title="About Us" />
       <Box className="m-4 p-4 text-black ">
         <Typography variant="h3" marginY={3} color="primary.dark">
           Heading 1
